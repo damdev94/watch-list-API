@@ -93,7 +93,7 @@ exports.create = [
     const newList = new listModel({
       _id: new mongoose.Types.ObjectId(),
       name: req.body.name,
-      image: req.file.path.substring(70)
+      image: req.file.path.substring(65)
     })
 
     newList.save()
